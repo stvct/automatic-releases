@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: "package.json"
+          registry-url: https://npm.pkg.github.com/
+          scope: "@stvct"
+          cache: "npm"
+      - run: npm ci
+      - uses: changesets/action@v1
+        with:
+          publish: npx changeset publish

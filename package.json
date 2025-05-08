@@ -1,0 +1,15 @@
+{
+  "workspaces": [
+    "some-package"
+  ],
+  "publishConfig": {
+    "@stvct:registry": "https://npm.pkg.github.com"
+  },
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.3"
+  }
+}
