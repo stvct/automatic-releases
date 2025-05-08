@@ -9,6 +9,9 @@ jobs:
     permissions:
       contents: write
       packages: write
+      actions: write
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
