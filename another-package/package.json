@@ -1,0 +1,9 @@
+{
+  "name": "@stvct/another-package",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ]
+}
