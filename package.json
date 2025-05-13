@@ -1,6 +1,7 @@
 {
   "workspaces": [
-    "some-package"
+    "some-package",
+    "another-package"
   ],
   "publishConfig": {
     "@stvct:registry": "https://npm.pkg.github.com"
